@@ -42,6 +42,9 @@ footer{padding:40px;text-align:center;color:#999;border-top:1px solid #333}
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
+<button onclick="notify()" style="background:none;border:none;font-size:24px;color:#d4af37;cursor:pointer;margin-left:20px;">
+  🔔
+</button>
 </header>
 
 <section class="hero">
@@ -109,5 +112,15 @@ footer{padding:40px;text-align:center;color:#999;border-top:1px solid #333}
 <p>Luxury Time © 2026 | Demo Watch Store</p>
 </footer>
 
+<script>
+function notify(){
+const allow=confirm("Enable notifications for new watch launches?");
+if(allow){
+alert("Notifications can be connected later with OneSignal.");
+}else{
+alert("You can enable them later.");
+}
+}
+</script>
 </body>
 </html>
